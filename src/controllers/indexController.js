@@ -37,7 +37,8 @@ module.exports = {
 
     notifications: (req,res) =>{
 
-        console.log(req.body);
+        console.log('webhook', req.body);
+        res.send(req.body)
         // le respondemos a MP que llego la informacion
         res.status(200).end('OK')
 
