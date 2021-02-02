@@ -45,8 +45,10 @@ module.exports = {
 
     comprar: (req, res) => {
 
-        const url = host + 'callback?status='
         const host = 'https://mercado-pago-1.herokuapp.com/'
+
+        const url = host + 'callback?status='
+        
 
         let preference = {
             // volver al sitio, dependiendo del status de la compra
